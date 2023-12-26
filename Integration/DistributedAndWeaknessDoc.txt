@@ -1,0 +1,7 @@
+﻿2-a:
+    For distributed scenario redis cache must be used.
+    
+2-b:
+    If redis is restarted,down etc. it will be a problem. And redis comes with a cost. Concurrency and redis is complex stuff. 
+    Also any delay on redis will cause a delay on the application and consistency problems. Redis is scalable but as I mentioned it comes with a cost.
+    Network related problems will be a problem, if redis is down or network is down, application wont work correctly, for this maybe message broker can be used.
